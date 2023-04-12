@@ -3,9 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo installingwebserver
+      - echo installing webserver
       - sudo apt update
       - sudo apt install apache2 -y
+      
    build:
      commands:
        - echo building file
@@ -13,7 +14,7 @@ phases:
     
    post_build:
      commands:
-       - echo Done and configured
+       - echo configured
     
    artifacts:
       files:
